@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: brown;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form h1 {
+  font-size: 20px;
+}
+
+form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: orangered;
+}
+
+form .body-formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+form .body-formulaire .box {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form .body-formulaire .left .box input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid lightgray;
+  outline-color: orangered;
+  border-radius: 5px;
+}
+
+form .body-formulaire .left .box i {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  padding: 9px 8px;
+  color: orangered;
+}
+
+form .body-formulaire .right {
+  margin-left: 40px;
+}
+
+form .body-formulaire .right .box {
+  height: 100%;
+}
+
+form .body-formulaire .right .box textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: lightgray;
+  border: 2px solid orangered;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+
+form .foot-formulaire button {
+  margin-top: 10px;
+  background-color: orangered;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+form .foot-formulaire button:hover {
+  background-color: brown;
+}
+
+@media screen and (max-width:920px) {
+  form .body-formulaire .right{
+    margin-left: 0;
+  }
+}
